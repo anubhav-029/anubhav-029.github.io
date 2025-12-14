@@ -3,7 +3,7 @@ layout: post
 title:  "Golf swing monitoring"
 date:   2011-07-21 22:21:59 +00:00
 image: /images/ankur.png
-categories: Other
+categories: UC
 author: "Leo Keselman"
 subtitle: "At low power, low cost"
 ---
