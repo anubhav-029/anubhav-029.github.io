@@ -3,7 +3,7 @@ layout: post
 title:  "Project Tetra: Collaborative robot state estimation"
 date:   2011-07-21 22:21:59 +00:00
 image: /images/tetra-pcb.jpg
-categories: UC
+categories: Research
 course: "Berkeley EE149: Embedded Systems"
 author: "Leo Keselman"
 subtitle: "Collaborative robot state estimation"
