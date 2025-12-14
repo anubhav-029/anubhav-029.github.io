@@ -4,7 +4,7 @@ title:  " Depth Image Enhancement"
 date:   2015-08-06 22:21:59 +00:00
 image: /images/haowei.png
 categories: UC
-author: "Leo Keselman"
+author: "Anubhav Vishwakarma"
 subtitle: "Hand Tracking Demo"
 patent: https://patents.google.com/patent/US9661298B2
 ---

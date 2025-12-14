@@ -5,7 +5,7 @@ date:   2010-08-22 00:10:26 +00:00
 image: /images/gina-power.png
 categories: Research
 course: " Berkeley"
-author: "Leo Keselman"
+author: "Anubhav Vishwakarma"
 subtitle: "Low power wireless"
 ---
 For testing and validating the functionality of the GINA (Guidance and Inertial NAvigation) mote, a 1.6 gram sensor platform. 
