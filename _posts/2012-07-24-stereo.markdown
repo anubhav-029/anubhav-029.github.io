@@ -3,7 +3,7 @@ layout: post
 title:  "Stereoscopic depth reconstruction with probabilistic pixel correspondence search"
 date:   2012-07-24 22:21:59 +00:00
 image: /images/GS.gif
-video: /videos/GS.mp4
+video: /videos/GS_final.mp4
 categories: research
 patent: https://patents.google.com/patent/US8792710B2
 ---
