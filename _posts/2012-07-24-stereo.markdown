@@ -2,8 +2,8 @@
 layout: post
 title:  "Stereoscopic depth reconstruction with probabilistic pixel correspondence search"
 date:   2012-07-24 22:21:59 +00:00
-image: /images/GS.gif
+image: /images/GS_high.gif
 categories: research
 patent: https://patents.google.com/patent/US8792710B2
 ---
-A fast method for performing stereo depth maps. 
+Worked on creation of 3DGS pipeline for 
