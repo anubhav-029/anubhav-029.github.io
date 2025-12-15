@@ -2,7 +2,7 @@
 layout: post
 title:  "Compact VCSEL Projector"
 date:   2016-06-27 22:21:59 +00:00
-image: /images/GS.gif
+image: /images/mppi_cbf.gif
 categories: research
 patent: https://patents.google.com/patent/US10007994B2 
 patent2: https://patents.google.com/patent/US20170374244A1
