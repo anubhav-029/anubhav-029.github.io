@@ -3,7 +3,7 @@ layout: post
 title:  " Depth Image Enhancement"
 date:   2015-08-06 22:21:59 +00:00
 image: /images/GS.gif
-video: /videos/GS_final.mp4
+video: /videos/aeromodelling.mp4
 categories: research
 author: "Anubhav Vishwakarma"
 subtitle: "Hand Tracking Demo"
