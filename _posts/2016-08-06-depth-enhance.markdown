@@ -2,7 +2,8 @@
 layout: post
 title:  " Depth Image Enhancement"
 date:   2015-08-06 22:21:59 +00:00
-image: /images/mppi_cbf.gif
+image: /images/GS.gif
+video: /videos/GS.mp4
 categories: research
 author: "Anubhav Vishwakarma"
 subtitle: "Hand Tracking Demo"

@@ -70,7 +70,14 @@
           {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              {% if post.video %}
+              <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
+                <source src="{{post.video}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% else %}
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -128,7 +135,14 @@
           {% if cat != 'research' and cat != 'Intel' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              {% if post.video %}
+              <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
+                <source src="{{post.video}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% else %}
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
