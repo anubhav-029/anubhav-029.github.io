@@ -26,59 +26,26 @@
 
   <style>
     #themeToggle {
-      padding: 8px 12px;
-      background-color: var(--link-color);
-      color: white;
+      padding: 10px;
+      background-color: transparent;
+      color: var(--text-color);
       border: none;
-      border-radius: 5px;
       cursor: pointer;
-      font-family: 'Lato', sans-serif;
-      font-size: 12px;
+      font-size: 24px;
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
     #themeToggle:hover {
-      background-color: var(--link-hover);
-    }
-
-    body.dark-theme #themeToggle {
-      background-color: var(--link-color);
-    }
-
-    body.dark-theme #themeToggle:hover {
-      background-color: var(--link-hover);
+      transform: scale(1.2);
     }
   </style>
 
 </head>
 
 <body>
-  <!-- Logo in top left corner -->
-  <div style="position:fixed; top:10px; left:20px; z-index:1000;">
-    <div style="
-      width: 50px;
-      height: 50px;
-      background-color: var(--link-color);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Palatino, serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      cursor: pointer;
-      transition: all 0.3s ease;
-    " onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
-       onmouseover="this.style.transform='scale(1.1)'" 
-       onmouseout="this.style.transform='scale(1)'">
-      AV
-    </div>
-  </div>
-
   <!-- Theme Toggle Button -->
   <div style="position:fixed; top:10px; right:20px; z-index:1000;">
-    <button id="themeToggle">🌙 Dark</button>
+    <button id="themeToggle"><i class="fa-light fa-sun-bright"></i></button>
   </div>
 
   <br><br><br>
@@ -114,20 +81,14 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <ul style="list-style-type: none; padding-left: 0;">
-                <li style="margin-bottom: 10px;">
+              <ul style="list-style-type: none; padding-left: 0; margin-top: 10px;">
+                <li style="margin-bottom: 8px;">
                   <strong>[Dec 2025]</strong> Our paper on safe reinforcement learning has been accepted to ICRA 2025!
                 </li>
-                <li style="margin-bottom: 10px;">
+                <li style="margin-bottom: 8px;">
                   <strong>[Sep 2025]</strong> Started my PhD at University of Washington, advised by Prof. Karen Leung.
                 </li>
-                <li style="margin-bottom: 10px;">
+                <li style="margin-bottom: 8px;">
                   <strong>[Jun 2025]</strong> Graduated with B.Tech in Mechanical Engineering from Ramaiah Institute of Technology.
                 </li>
               </ul>
@@ -306,10 +267,10 @@
       const button = document.getElementById('themeToggle');
       if (theme === 'dark') {
         document.body.classList.add('dark-theme');
-        button.textContent = '☀️ Light';
+        button.innerHTML = '<i class="fal fa-moon"></i>';
       } else {
         document.body.classList.remove('dark-theme');
-        button.textContent = '🌙 Dark';
+        button.innerHTML = '<i class="fa-light fa-sun-bright"></i>';
       }
       localStorage.setItem('theme', theme);
     }
