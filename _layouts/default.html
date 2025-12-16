@@ -43,12 +43,38 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+  <style>
+    #themeToggle {
+      padding: 8px 12px;
+      background-color: var(--link-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Lato', sans-serif;
+      font-size: 12px;
+      transition: background-color 0.3s ease;
+    }
+
+    #themeToggle:hover {
+      background-color: var(--link-hover);
+    }
+
+    body.dark-theme #themeToggle {
+      background-color: var(--link-color);
+    }
+
+    body.dark-theme #themeToggle:hover {
+      background-color: var(--link-hover);
+    }
+  </style>
+
 </head>
 
 <body>
   <!-- Theme Toggle Button -->
   <div style="position:fixed; top:10px; right:20px; z-index:1000;">
-    <button id="themeToggle" style="padding:8px 12px; background-color:var(--link-color); color:white; border:none; border-radius:5px; cursor:pointer; font-family:'Lato', sans-serif; font-size:12px;">🌙 Dark</button>
+    <button id="themeToggle">🌙 Dark</button>
   </div>
 
   <br><br><br>

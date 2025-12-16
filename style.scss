@@ -11,6 +11,7 @@
   --link-color: #1772d0;
   --link-hover: #f09228;
   --border-color: #e0e0e0;
+  --table-bg: #ffffff;
 }
 
 body.dark-theme {
@@ -19,6 +20,24 @@ body.dark-theme {
   --link-color: #64b5f6;
   --link-hover: #ffb74d;
   --border-color: #333333;
+  --table-bg: #252525;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme table {
+  background-color: var(--table-bg);
+}
+
+body.dark-theme td,
+body.dark-theme th,
+body.dark-theme tr {
+  background-color: var(--table-bg);
+  color: var(--text-color);
 }
 
 //
