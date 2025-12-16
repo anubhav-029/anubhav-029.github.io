@@ -4,7 +4,8 @@ title:  "MPPI with Control Barrier Functions"
 date:   2025-06-02 22:21:59 +00:00
 image: /images/mppi_cbf.gif
 video: /videos/mppi_cbf.mp4
-categories: research
+pdf: /pdfs/EE548_Report.pdf
+categories: project
+author: "Anubhav Vishwakarma"
 ---
-
-A sampling based MPC implementation with Discrete Control Barrier function for obstacle avoidance. 
+A project for class multivariable control: Sampling based MPC implementation with Discrete Control Barrier function for obstacle avoidance.
