@@ -176,7 +176,12 @@
               {% if post.paper or post.arxiv %} | {% endif %}<a href="{{post.video}}">video</a>
               {% endif %}
               {% if post.code %}
-              {% if post.paper or post.arxiv or post.video %} | {% endif %}<a href="{{post.code}}">code</a>
+              {% if post.paper or post.arxiv or post.video %} | {% endif %}
+              {% if post.code contains 'http' %}
+              <a href="{{post.code}}">code</a>
+              {% else %}
+              code [{{post.code}}]
+              {% endif %}
               {% endif %}
               {% if post.poster %}
               {% if post.paper or post.arxiv or post.video or post.code %} | {% endif %}<a href="{{post.poster}}">poster</a>
@@ -259,7 +264,12 @@
               {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video %} | {% endif %}<a href="{{post.video2}}">video #2</a>
               {% endif %}
               {% if post.code %}
-              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 %} | {% endif %}<a href="{{post.code}}">code</a>
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 %} | {% endif %}
+              {% if post.code contains 'http' %}
+              <a href="{{post.code}}">code</a>
+              {% else %}
+              code [{{post.code}}]
+              {% endif %}
               {% endif %}
               {% if post.poster %}
               {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code %} | {% endif %}<a href="{{post.poster}}">poster</a>
@@ -328,7 +338,12 @@
               {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video %} | {% endif %}<a href="{{post.video2}}">video #2</a>
               {% endif %}
               {% if post.code %}
-              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 %} | {% endif %}<a href="{{post.code}}">code</a>
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 %} | {% endif %}
+              {% if post.code contains 'http' %}
+              <a href="{{post.code}}">code</a>
+              {% else %}
+              code [{{post.code}}]
+              {% endif %}
               {% endif %}
               {% if post.poster %}
               {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code %} | {% endif %}<a href="{{post.poster}}">poster</a>
