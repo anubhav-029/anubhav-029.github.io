@@ -46,6 +46,11 @@
 </head>
 
 <body>
+  <!-- Theme Toggle Button -->
+  <div style="position:fixed; top:10px; right:20px; z-index:1000;">
+    <button id="themeToggle" style="padding:8px 12px; background-color:var(--link-color); color:white; border:none; border-radius:5px; cursor:pointer; font-family:'Lato', sans-serif; font-size:12px;">🌙 Dark</button>
+  </div>
+
   <br><br><br>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
@@ -231,6 +236,44 @@
     <h3 style="margin:3px 0; font-size:12px;">Visitors</h3>
     <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=fd2wl8VE9RpsUriJP7dUUYx_DXcxK88t2rsNIIYox5E&cl=ffffff&w=a"></script>
   </div>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    // Initialize theme from localStorage
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      applyTheme(savedTheme);
+    }
+
+    // Apply theme to the page
+    function applyTheme(theme) {
+      const button = document.getElementById('themeToggle');
+      if (theme === 'dark') {
+        document.body.classList.add('dark-theme');
+        button.textContent = '☀️ Light';
+      } else {
+        document.body.classList.remove('dark-theme');
+        button.textContent = '🌙 Dark';
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    // Toggle theme on button click
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      applyTheme(newTheme);
+    });
+
+    // Initialize theme on page load
+    window.addEventListener('load', initTheme);
+    // Also run immediately in case page is already loaded
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTheme);
+    } else {
+      initTheme();
+    }
+  </script>
 </body>
 
 </html>

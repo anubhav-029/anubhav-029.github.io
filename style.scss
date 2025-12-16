@@ -2,6 +2,26 @@
 ---
 
 //
+// THEME VARIABLES
+//
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1772d0;
+  --link-hover: #f09228;
+  --border-color: #e0e0e0;
+}
+
+body.dark-theme {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --link-color: #64b5f6;
+  --link-hover: #ffb74d;
+  --border-color: #333333;
+}
+
+//
 // IMPORTS
 //
 
@@ -13,13 +33,13 @@
 /* BASE RULES */
 /**************/
 a {
-  color: #1772d0;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: var(--link-hover);
   text-decoration: none;
 }
 
@@ -32,6 +52,9 @@ a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 strong {
