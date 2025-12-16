@@ -29,14 +29,23 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-theme table {
-  background-color: var(--table-bg);
+table {
+  background-color: var(--bg-color);
 }
 
+td,
+th,
+tr {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+body.dark-theme,
+body.dark-theme table,
 body.dark-theme td,
 body.dark-theme th,
 body.dark-theme tr {
-  background-color: var(--table-bg);
+  background-color: var(--bg-color);
   color: var(--text-color);
 }
 
