@@ -38,6 +38,25 @@
     #themeToggle:hover {
       transform: scale(1.2);
     }
+
+    /* Custom scrollbar styling for news section */
+    .news-scroll::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    .news-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .news-scroll::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 4px;
+    }
+
+    .news-scroll::-webkit-scrollbar-thumb:hover {
+      background: var(--text-color);
+    }
   </style>
 
 </head>
@@ -83,7 +102,7 @@
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>News</h2>
-              <div style="max-height: 80px; overflow-y: auto; overflow-x: auto;">
+              <div class="news-scroll" style="max-height: 80px; overflow-y: auto; overflow-x: auto;">
                 <ul style="list-style-type: none; padding-left: 0; margin-top: 10px; margin-right: 10px;">
                   <li style="margin-bottom: 8px; white-space: nowrap;">
                     <strong>[Sep 2025]</strong> Our paper MPAIL won the <span style="color: rgb(163, 53, 53);">Best Runner-Up</span> award at CoRL <a href="https://rational-robots.github.io/#:~:text=Model%20Predictive%20Adversarial%20Imitation%20Learning%20for%20Planning%20from%20Observation">Resource-Rational Robot Learning Workshop</a>!
