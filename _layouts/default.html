@@ -161,10 +161,11 @@
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <span style="font-size: 14px;">{{post.authors}}</span>
+              <span style="font-size: 18px;">{{post.authors}}</span>
               <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <span style="font-size: 18px;"><em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}</span>
               <br>
+              <span style="font-size: 18px;">
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a>
               {% endif %}
@@ -189,6 +190,7 @@
               {% if post.youtube %}
               {% if post.paper or post.arxiv or post.video or post.code or post.poster or post.slides or post.website %} | {% endif %}<a href="{{post.youtube}}">youtube</a>
               {% endif %}
+              </span>
               <br>
               <div class="excerpt-wrapper">
                 <div class="excerpt-content" id="excerpt-{{ forloop.index }}">
@@ -230,10 +232,11 @@
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <em>{{post.categories}} {{post.course}}</em>
+              <span style="font-size: 18px;"><em>{{post.categories}} {{post.course}}</em></span>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              <span style="font-size: 18px;">{{ post.date | date: "%Y-%m-%d" }}</span>
               <br>
+              <span style="font-size: 18px;">
               {% if post.website %}
               <a href="{{post.website}}">website</a>
               {% endif %}
@@ -264,6 +267,7 @@
               {% if post.slides %}
               {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code or post.poster %} | {% endif %}<a href="{{post.slides}}">slides</a>
               {% endif %}
+              </span>
               <br>
               <div class="excerpt-wrapper">
                 <div class="excerpt-content" id="excerpt-experience-{{ forloop.index }}">
@@ -306,10 +310,11 @@
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <em>{{post.categories}} {{post.course}}</em>
+              <span style="font-size: 18px;"><em>{{post.categories}} {{post.course}}</em></span>
               <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              <span style="font-size: 18px;">{{ post.date | date: "%Y-%m-%d" }}</span>
               <br>
+              <span style="font-size: 18px;">
               {% if post.website %}
               <a href="{{post.website}}">website</a>
               {% endif %}
@@ -340,6 +345,7 @@
               {% if post.slides %}
               {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code or post.poster %} | {% endif %}<a href="{{post.slides}}">slides</a>
               {% endif %}
+              </span>
               <br>
               <div class="excerpt-wrapper">
                 <div class="excerpt-content" id="excerpt-project-{{ forloop.index }}">
