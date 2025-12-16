@@ -132,34 +132,33 @@
             </td>
             <td style="padding:2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <br>
               {{post.authors}}
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
+              <a href="{{post.paper}}">paper</a>
               {% endif %}
               {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
+              {% if post.paper %} / {% endif %}<a href="{{post.arxiv}}">arxiv</a>
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
+              {% if post.paper or post.arxiv %} / {% endif %}<a href="{{post.video}}">video</a>
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              {% if post.paper or post.arxiv or post.video %} / {% endif %}<a href="{{post.code}}">code</a>
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              {% if post.paper or post.arxiv or post.video or post.code %} / {% endif %}<a href="{{post.poster}}">poster</a>
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster %} / {% endif %}<a href="{{post.slides}}">slides</a>
               {% endif %}
               {% if post.website %}
-              <a href="{{post.website}}">website</a> /
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster or post.slides %} / {% endif %}<a href="{{post.website}}">website</a>
               {% endif %}
               {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster or post.slides or post.website %} / {% endif %}<a href="{{post.youtube}}">youtube</a>
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -198,11 +197,9 @@
             </td>
             <td style="padding:2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
-
               <br>
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
@@ -271,11 +268,9 @@
             </td>
             <td style="padding:2.5%;width:65%;vertical-align:middle">
               <h3>{{post.title}}</h3>
-              <br>
               <em>{{post.categories}} {{post.course}}</em>
               <br>
               {{ post.date | date: "%Y-%m-%d" }}
-
               <br>
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
