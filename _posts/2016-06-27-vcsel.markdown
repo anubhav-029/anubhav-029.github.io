@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Compact VCSEL Projector"
-date:   2016-06-27 22:21:59 +00:00
+title:  "MPPI with Control Barrier Functions"
+date:   2025-06-02 22:21:59 +00:00
 image: /images/mppi_cbf.gif
 video: /videos/mppi_cbf.mp4
 categories: research
-patent: https://patents.google.com/patent/US10007994B2 
-patent2: https://patents.google.com/patent/US20170374244A1
-patent3: https://patents.google.com/patent/US9992474B2
 ---
-A low-cost dense, configurable projector system for RGB-D depth sensors. 
+
+A sampling based MPC implementation with Discrete Control Barrier function for obstacle avoidance. 

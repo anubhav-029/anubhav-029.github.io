@@ -23,52 +23,18 @@ body.dark-theme {
   --table-bg: #252525;
 }
 
+//
+// BASE RULES
+//
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: all 1.5s ease;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-display: auto;
 }
 
-table {
-  background-color: var(--bg-color) !important;
-  border-color: transparent !important;
-}
-
-td,
-th,
-tr {
-  background-color: transparent !important;
-  color: var(--text-color);
-  border-color: transparent !important;
-}
-
-p {
-  background-color: transparent !important;
-  color: var(--text-color);
-}
-
-body.dark-theme,
-body.dark-theme table,
-body.dark-theme td,
-body.dark-theme th,
-body.dark-theme tr,
-body.dark-theme p {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  border-color: transparent;
-}
-
-//
-// IMPORTS
-//
-
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -80,7 +46,23 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+table {
+  background-color: var(--table-bg);
+  border-color: transparent;
+  width: 100%; /* Common table setting */
+}
+
+td,
+th,
+tr {
+  background-color: transparent; 
+}
+
+p {
+  /* Inherits color and background from body */
+}
+
+strong,
 td,
 th,
 tr,
@@ -88,34 +70,6 @@ p {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
-}
-
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
-}
-
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
 }
 
 h1 {
@@ -129,7 +83,26 @@ h1 {
   margin-block-end: 14px;
   margin-left: 0px;
   margin-right: 0px;
+}
 
+h2 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-display: auto;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+  /* Removed display: inline; */
+}
+
+h3 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-display: auto;
+  padding: 0px;
+  margin: 0px;
+  /* Removed display: inline; */
 }
 
 span.highlight {

@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Stereoscopic depth reconstruction with probabilistic pixel correspondence search"
+title:  "Tirtha"
 date:   2012-07-24 22:21:59 +00:00
 image: /images/GS.gif
 video: /videos/GS_final.mp4
 categories: research
-patent: https://patents.google.com/patent/US8792710B2
 ---
-Worked on creation of 3DGS pipeline for 
+A method to utilize the crowd source data of different temples across India and create a 3D model with gaussian splatting. 
