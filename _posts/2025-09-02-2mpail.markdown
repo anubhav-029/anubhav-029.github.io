@@ -3,7 +3,6 @@ layout: post
 title:  "Model Predictive Adversarial Imitation Learning"
 date:   2012-07-24 22:21:59 +00:00
 image: /images/mpail.png
-video: /videos/mpail_with_vis.mp4
 categories: research
 arxiv: https://arxiv.org/abs/2507.21533v1
 ---
