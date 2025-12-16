@@ -8,6 +8,6 @@ categories: research
 author: "Anubhav Vishwakarma"
 ---
 Captained the team to 2nd rank internationally competing against top global institutions. 
-<center>
+<!-- <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dC_3NIQKyjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+</center> -->
