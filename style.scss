@@ -30,13 +30,20 @@ body {
 }
 
 table {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color) !important;
+  border-color: transparent !important;
 }
 
 td,
 th,
 tr {
-  background-color: transparent;
+  background-color: transparent !important;
+  color: var(--text-color);
+  border-color: transparent !important;
+}
+
+p {
+  background-color: transparent !important;
   color: var(--text-color);
 }
 
@@ -44,9 +51,11 @@ body.dark-theme,
 body.dark-theme table,
 body.dark-theme td,
 body.dark-theme th,
-body.dark-theme tr {
+body.dark-theme tr,
+body.dark-theme p {
   background-color: var(--bg-color);
   color: var(--text-color);
+  border-color: transparent;
 }
 
 //
