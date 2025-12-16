@@ -40,13 +40,11 @@ tr {
   background-color: transparent !important;
   color: var(--text-color);
   border-color: transparent !important;
-  transition: all 1.5s ease;
 }
 
 p {
   background-color: transparent !important;
   color: var(--text-color);
-  transition: all 1.5s ease;
 }
 
 body.dark-theme,
@@ -74,7 +72,6 @@ body.dark-theme p {
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: all 1.5s ease;
 }
 
 a:focus,
