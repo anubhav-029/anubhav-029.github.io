@@ -66,6 +66,7 @@
     .excerpt-content {
       display: -webkit-box;
       -webkit-line-clamp: 3;
+      line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -73,6 +74,7 @@
 
     .excerpt-content.expanded {
       -webkit-line-clamp: unset;
+      line-clamp: unset;
       display: block;
     }
 
@@ -442,14 +444,19 @@
     // Hide "Read more" for short excerpts on page load
     window.addEventListener('load', function() {
       document.querySelectorAll('.excerpt-content').forEach(function(excerpt) {
-        // Check if content is actually truncated
-        if (excerpt.scrollHeight <= excerpt.clientHeight) {
-          // Content fits in 3 lines, hide the read more button
-          const readMoreBtn = excerpt.nextElementSibling;
-          if (readMoreBtn && readMoreBtn.classList.contains('read-more')) {
-            readMoreBtn.style.display = 'none';
+        // Small delay to ensure proper rendering
+        setTimeout(function() {
+          // Check if content is actually truncated by comparing scroll height with client height
+          const isTruncated = excerpt.scrollHeight > excerpt.clientHeight + 2; // +2 for rounding errors
+          
+          if (!isTruncated) {
+            // Content fits without truncation, hide the read more button
+            const readMoreBtn = excerpt.nextElementSibling;
+            if (readMoreBtn && readMoreBtn.classList.contains('read-more')) {
+              readMoreBtn.style.display = 'none';
+            }
           }
-        }
+        }, 100);
       });
     });
 
