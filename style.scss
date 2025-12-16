@@ -54,6 +54,7 @@ body.dark-theme tr {
 a {
   color: var(--link-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:focus,
@@ -66,8 +67,7 @@ body,
 td,
 th,
 tr,
-p,
-a {
+p {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
