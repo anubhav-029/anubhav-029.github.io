@@ -26,7 +26,7 @@ body.dark-theme {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 1.5s ease, color 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 table {
@@ -40,11 +40,13 @@ tr {
   background-color: transparent !important;
   color: var(--text-color);
   border-color: transparent !important;
+  transition: all 1.5s ease;
 }
 
 p {
   background-color: transparent !important;
   color: var(--text-color);
+  transition: all 1.5s ease;
 }
 
 body.dark-theme,
@@ -72,7 +74,7 @@ body.dark-theme p {
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 a:focus,
