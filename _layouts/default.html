@@ -440,6 +440,20 @@
       }
     }
 
+    // Hide "Read more" for short excerpts on page load
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.excerpt-content').forEach(function(excerpt) {
+        // Check if content is actually truncated
+        if (excerpt.scrollHeight <= excerpt.clientHeight) {
+          // Content fits in 3 lines, hide the read more button
+          const readMoreBtn = excerpt.nextElementSibling;
+          if (readMoreBtn && readMoreBtn.classList.contains('read-more')) {
+            readMoreBtn.style.display = 'none';
+          }
+        }
+      });
+    });
+
     // Initialize theme on page load
     window.addEventListener('load', initTheme);
     // Also run immediately in case page is already loaded
