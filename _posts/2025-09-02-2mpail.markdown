@@ -3,6 +3,7 @@ layout: post
 title:  "Model Predictive Adversarial Imitation Learning"
 date:   2025-04-25 22:21:59 +00:00
 image: /images/mpail.png
+code: "Coming soon"
 categories: research
 authors: "Tyler Han, Yanda Bao, Bhaumik Mehta, Gabriel Guo, <strong>Anubhav Vishwakarma</strong>, Emily Kang, Sanghun Jung, Rosario Scalise, Jason Zhou, Bryan Xu, Byron Boots"
 paper: https://arxiv.org/abs/2507.21533v1
