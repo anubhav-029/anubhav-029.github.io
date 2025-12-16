@@ -47,7 +47,7 @@ a:hover {
 }
 
 table {
-  background-color: var(--table-bg);
+  background-color: transparent !important;
   border-color: transparent;
   width: 100%; /* Common table setting */
 }
@@ -55,7 +55,7 @@ table {
 td,
 th,
 tr {
-  background-color: transparent; 
+  background-color: transparent !important;
 }
 
 p {
