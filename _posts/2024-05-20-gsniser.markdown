@@ -5,6 +5,7 @@ date:   2024-07-20 22:21:59 +00:00
 video: /videos/GS_final.mp4
 code: "https://github.com/smlab-niser/tirtha-public?tab=readme-ov-file"
 website: "https://smlab.niser.ac.in/project/tirtha/"
+company: "National Institute of Science Education and Research"
 categories: experience
 ---
 A method to utilize the crowd source data of different temples across India and create a 3D model with gaussian splatting. 
