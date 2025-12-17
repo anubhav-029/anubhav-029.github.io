@@ -205,7 +205,7 @@
                 <div class="excerpt-content" id="excerpt-{{ forloop.index }}">
                   {{ post.content }}
                 </div>
-                <span class="read-more" onclick="toggleExcerpt('excerpt-{{ forloop.index }}', this)">Read more...</span>
+                <span class="read-more" onclick="toggleExcerpt('excerpt-{{ forloop.index }}', this)">[...]</span>
               </div>
             </td>
           </tr>
@@ -462,9 +462,9 @@
       content.classList.toggle('expanded');
       
       if (content.classList.contains('expanded')) {
-        element.textContent = 'Read less';
+        element.textContent = element.textContent === '[...]' ? '[-]' : 'Read less';
       } else {
-        element.textContent = 'Read more...';
+        element.textContent = element.textContent === '[-]' ? '[...]' : 'Read more...';
       }
     }
 
@@ -473,6 +473,9 @@
       document.querySelectorAll('.excerpt-content').forEach(function(excerpt) {
         // Small delay to ensure proper rendering
         setTimeout(function() {
+          // Force reflow to ensure accurate measurements
+          excerpt.offsetHeight;
+          
           // Check if content is actually truncated by comparing scroll height with client height
           const isTruncated = excerpt.scrollHeight > excerpt.clientHeight + 2; // +2 for rounding errors
           
@@ -483,7 +486,7 @@
               readMoreBtn.style.display = 'none';
             }
           }
-        }, 100);
+        }, 200); // Increased delay for better rendering
       });
     });
 
