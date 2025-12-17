@@ -7,4 +7,4 @@ image: /images/slam.gif
 categories: experience
 paper: https://arxiv.org/abs/2507.21533v1
 ---
-This method improved the performance of adversarial imitation learning in out of distribution states by using planning with learned cost and value function than using policy. 
+Worked on autonomy stack to create micro UAV safely navigate with just visual and inertial odometry. Utilized RTABMAP to create map of the indoor environment to aid localization of drone. 
