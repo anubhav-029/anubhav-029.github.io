@@ -2,8 +2,8 @@
 layout: post
 title:  "GPS Denied Navigation of Micro UAV"
 date:   2024-01-30 22:21:59 +00:00
-image: /images/mpail.png
-video: /videos/mpail_with_vis.mp4
+image: /images/slam.gif
+# video: /videos/mpail_with_vis.mp4
 categories: experience
 paper: https://arxiv.org/abs/2507.21533v1
 ---
