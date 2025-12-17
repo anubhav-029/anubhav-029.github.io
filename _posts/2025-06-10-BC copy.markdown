@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Behavior cloning of expert for navigation"
+title:  "Imitating expert for navigation through behavior cloning"
 date:   2025-07-02 22:21:59 +00:00
 image: /images/mppi_cbf.gif
 video: /videos/BC.mp4
