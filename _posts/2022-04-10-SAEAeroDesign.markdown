@@ -9,4 +9,4 @@ categories: project
 report: pdfs/Quatlas.pdf
 author: "Anubhav Vishwakarma"
 ---
-Captained the team to 2nd rank internationally competing against top global institutions. 
+Captained the team to 2nd rank in design internationally competing against top global institutions. 
