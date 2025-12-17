@@ -149,7 +149,7 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:middle;min-width:150px">
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
               {% if post.video %}
               <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
                 <source src="{{post.video}}" type="video/mp4">
@@ -159,7 +159,7 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
               {% endif %}
             </td>
-            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
               {% if post.title_link %}
               <a href="{{post.title_link}}" style="text-decoration: none;"><h3>{{post.title}}</h3></a>
               {% else %}
@@ -229,7 +229,7 @@
           {% for cat in post.categories %}
           {% if cat != 'research' and cat != 'project' %}
           <tr>
-            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:middle;min-width:150px">
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
               {% if post.video %}
               <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
                 <source src="{{post.video}}" type="video/mp4">
@@ -239,7 +239,7 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
               {% endif %}
             </td>
-            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
               {% if post.title_link %}
               <a href="{{post.title_link}}" style="text-decoration: none;"><h3>{{post.title}}</h3></a>
               {% else %}
@@ -316,7 +316,7 @@
           {% for cat in post.categories %}
           {% if cat != 'research' and cat != 'experience' %}
           <tr>
-            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:middle;min-width:150px">
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
               {% if post.video %}
               <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
                 <source src="{{post.video}}" type="video/mp4">
@@ -326,7 +326,7 @@
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
               {% endif %}
             </td>
-            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
               {% if post.title_link %}
               <a href="{{post.title_link}}" style="text-decoration: none;"><h3>{{post.title}}</h3></a>
               {% else %}
