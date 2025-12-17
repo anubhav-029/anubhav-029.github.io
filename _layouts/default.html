@@ -63,6 +63,10 @@
     }
 
     /* Text truncation for excerpts */
+    .excerpt-wrapper {
+      position: relative;
+    }
+    
     .excerpt-content {
       display: -webkit-box;
       -webkit-line-clamp: 3;
@@ -70,12 +74,15 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+      max-height: 4.8em; /* Approximately 3 lines with line-height 1.6 */
     }
 
     .excerpt-content.expanded {
       -webkit-line-clamp: unset;
       line-clamp: unset;
       display: block;
+      max-height: none;
+      overflow: visible;
     }
 
     .read-more {
