@@ -2,9 +2,8 @@
 layout: post
 title:  "MPPI with Control Barrier Functions"
 date:   2025-06-02 22:21:59 +00:00
-image: /images/mppi_cbf.gif
 video: /videos/mppi_cbf.mp4
-pdf: /pdfs/EE548_Report.pdf
+report: /pdfs/EE548_Report.pdf
 categories: project
 author: "Anubhav Vishwakarma"
 ---
