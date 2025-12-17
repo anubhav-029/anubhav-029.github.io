@@ -5,6 +5,7 @@ date:   2025-06-02 22:21:59 +00:00
 video: /videos/mppi_cbf.mp4
 report: /pdfs/EE548_Report.pdf
 categories: project
+company: National Institute of Science Education and Research
 author: "Anubhav Vishwakarma"
 ---
 A project for class multivariable control: Sampling based MPC implementation with Discrete Control Barrier function for obstacle avoidance.

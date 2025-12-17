@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tirtha"
+title:  "Tirtha: Gaussian splatting of archaeological sites"
 date:   2024-07-20 22:21:59 +00:00
 video: /videos/GS_final.mp4
 code: "https://github.com/smlab-niser/tirtha-public?tab=readme-ov-file"
