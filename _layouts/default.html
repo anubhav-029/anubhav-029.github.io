@@ -128,13 +128,20 @@
           {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
-              {% if post.video %}
+              {% if post.image and post.video %}
+              <div class="media-container" style="position: relative;">
+                <img src="/tn{{post.image}}" alt="project image" class="default-media" style="width:auto; height:auto; max-width:100%;" />
+                <video class="hover-media" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s ease;" controls muted loop>
+                  <source src="{{post.video}}" type="video/mp4">
+                </video>
+              </div>
+              {% elsif post.image %}
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% elsif post.video %}
               <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
                 <source src="{{post.video}}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              {% else %}
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
               {% endif %}
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
@@ -421,6 +428,25 @@
       const currentTheme = localStorage.getItem('theme') || 'light';
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       applyTheme(newTheme);
+    });
+
+    // Handle hover transition from image to video in research section
+    document.querySelectorAll('.media-container').forEach(function(container) {
+      const img = container.querySelector('.default-media');
+      const video = container.querySelector('.hover-media');
+      
+      container.addEventListener('mouseenter', function() {
+        img.style.opacity = '0';
+        video.style.opacity = '1';
+        video.play();
+      });
+      
+      container.addEventListener('mouseleave', function() {
+        img.style.opacity = '1';
+        video.style.opacity = '0';
+        video.pause();
+        video.currentTime = 0;
+      });
     });
 
     // Initialize theme on page load
