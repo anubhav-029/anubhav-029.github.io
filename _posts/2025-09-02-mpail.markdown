@@ -7,6 +7,7 @@ code: "Coming soon"
 categories: research
 authors: "Tyler Han, Yanda Bao, Bhaumik Mehta, Gabriel Guo, <strong>Anubhav Vishwakarma</strong>, Emily Kang, Sanghun Jung, Rosario Scalise, Jason Zhou, Bryan Xu, Byron Boots"
 paper: https://arxiv.org/abs/2507.21533v1
+video: videos/mpail_with_vis.mp4
 venue: CoRL:Conference on Robot Learning
 ---
 This method improved the performance of adversarial imitation learning from partially observable demonstrations in out of distribution states by using planning with learned cost and value function than using policy. 
