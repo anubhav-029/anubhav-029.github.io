@@ -2,7 +2,7 @@
 layout: post
 title:  "Multimodal two-wheeler driving dataset"
 date:   2025-07-24 22:21:59 +00:00
-image: /images/2Wheeler_dataset.png
+image: /images/disocver_robotics.png
 categories: research
 authors: "Kumar J. Jyothish, <strong>Anubhav Vishwakarma*</strong>, Shriman Keshri*, Subhankar Mishra"
 venue: "Springer Nature Link: Discover Robotics"

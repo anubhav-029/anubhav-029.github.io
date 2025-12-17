@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tirtha"
-date:   2012-07-24 22:21:59 +00:00
+date:   2024-07-20 22:21:59 +00:00
 image: /images/GS.gif
 video: /videos/GS_final.mp4
 categories: experience

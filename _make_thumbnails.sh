@@ -1,3 +1,6 @@
 for file in images/*.{jpg,png,gif}; do
-    [ ! -f "tn/$file" ] && convert "$file"  -thumbnail 160x160 "tn/$file"
+    [ -f "$file" ] && {
+        filename=$(basename "$file")
+        [ ! -f "tn/images/$filename" ] && ffmpeg -i "$file" -vf scale=250:-1 "tn/images/$filename"
+    }
 done

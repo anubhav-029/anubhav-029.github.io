@@ -160,7 +160,11 @@
               {% endif %}
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
+              {% if post.title_link %}
+              <a href="{{post.title_link}}" style="text-decoration: none;"><h3>{{post.title}}</h3></a>
+              {% else %}
               <h3>{{post.title}}</h3>
+              {% endif %}
               <span style="font-size: 16px;">{{post.authors}}</span>
               <br>
               <span style="font-size: 16px;"><em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}</span>
@@ -236,7 +240,11 @@
               {% endif %}
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
+              {% if post.title_link %}
+              <a href="{{post.title_link}}" style="text-decoration: none;"><h3>{{post.title}}</h3></a>
+              {% else %}
               <h3>{{post.title}}</h3>
+              {% endif %}
               <span style="font-size: 16px;"><em>{{post.categories}} {{post.course}}</em></span>
               <br>
               <span style="font-size: 16px;">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -319,7 +327,11 @@
               {% endif %}
             </td>
             <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:middle">
+              {% if post.title_link %}
+              <a href="{{post.title_link}}" style="text-decoration: none;"><h3>{{post.title}}</h3></a>
+              {% else %}
               <h3>{{post.title}}</h3>
+              {% endif %}
               <span style="font-size: 16px;"><em>{{post.categories}} {{post.course}}</em></span>
               <br>
               <span style="font-size: 16px;">{{ post.date | date: "%Y-%m-%d" }}</span>
