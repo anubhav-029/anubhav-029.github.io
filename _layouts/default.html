@@ -61,42 +61,6 @@
     .news-scroll::-webkit-scrollbar-corner {
       background: transparent;
     }
-
-    /* Text truncation for excerpts */
-    .excerpt-wrapper {
-      position: relative;
-    }
-    
-    .excerpt-content {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-height: 4.8em; /* Approximately 3 lines with line-height 1.6 */
-    }
-
-    .excerpt-content.expanded {
-      -webkit-line-clamp: unset;
-      line-clamp: unset;
-      display: block;
-      max-height: none;
-      overflow: visible;
-    }
-
-    .read-more {
-      color: var(--link-color);
-      cursor: pointer;
-      font-size: 14px;
-      margin-top: 5px;
-      display: inline-block;
-    }
-
-    .read-more:hover {
-      color: var(--link-hover);
-      text-decoration: underline;
-    }
   </style>
 
 </head>
@@ -208,12 +172,9 @@
               {% endif %}
               </span>
               <br>
-              <div class="excerpt-wrapper">
-                <div class="excerpt-content" id="excerpt-{{ forloop.index }}">
-                  {{ post.content }}
-                </div>
-                <span class="read-more" onclick="toggleExcerpt('excerpt-{{ forloop.index }}', this)">[...]</span>
-              </div>
+              <p style="font-size: 16px;">
+                {{ post.content }}
+              </p>
             </td>
           </tr>
           {% endif %}
@@ -294,12 +255,9 @@
               {% endif %}
               </span>
               <br>
-              <div class="excerpt-wrapper">
-                <div class="excerpt-content" id="excerpt-experience-{{ forloop.index }}">
-                  {{ post.content }}
-                </div>
-                <span class="read-more" onclick="toggleExcerpt('excerpt-experience-{{ forloop.index }}', this)">Read more...</span>
-              </div>
+              <p style="font-size: 16px;">
+                {{ post.content }}
+              </p>
             </td>
           </tr>
           {% endif %}
@@ -375,12 +333,9 @@
               {% endif %}
               </span>
               <br>
-              <div class="excerpt-wrapper">
-                <div class="excerpt-content" id="excerpt-project-{{ forloop.index }}">
-                  {{ post.content }}
-                </div>
-                <span class="read-more" onclick="toggleExcerpt('excerpt-project-{{ forloop.index }}', this)">Read more...</span>
-              </div>
+              <p style="font-size: 16px;">
+                {{ post.content }}
+              </p>
             </td>
           </tr>
           {% endif %}
@@ -461,40 +416,6 @@
       const currentTheme = localStorage.getItem('theme') || 'light';
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       applyTheme(newTheme);
-    });
-
-    // Toggle excerpt expand/collapse
-    function toggleExcerpt(id, element) {
-      const content = document.getElementById(id);
-      content.classList.toggle('expanded');
-      
-      if (content.classList.contains('expanded')) {
-        element.textContent = element.textContent === '[...]' ? '[-]' : 'Read less';
-      } else {
-        element.textContent = element.textContent === '[-]' ? '[...]' : 'Read more...';
-      }
-    }
-
-    // Hide "Read more" for short excerpts on page load
-    window.addEventListener('load', function() {
-      document.querySelectorAll('.excerpt-content').forEach(function(excerpt) {
-        // Small delay to ensure proper rendering
-        setTimeout(function() {
-          // Force reflow to ensure accurate measurements
-          excerpt.offsetHeight;
-          
-          // Check if content is actually truncated by comparing scroll height with client height
-          const isTruncated = excerpt.scrollHeight > excerpt.clientHeight + 2; // +2 for rounding errors
-          
-          if (!isTruncated) {
-            // Content fits without truncation, hide the read more button
-            const readMoreBtn = excerpt.nextElementSibling;
-            if (readMoreBtn && readMoreBtn.classList.contains('read-more')) {
-              readMoreBtn.style.display = 'none';
-            }
-          }
-        }, 200); // Increased delay for better rendering
-      });
     });
 
     // Initialize theme on page load
