@@ -11,4 +11,4 @@ video: videos/mpail.mp4
 venue: CoRL:Conference on Robot Learning
 subtitle: "🏆 Best Runner-Up Award at The Rational Robots Workshop, CoRL 2025"
 ---
-This method improved the performance of adversarial imitation learning from partially observable demonstrations in out of distribution states by using planning with learned cost and value function than using policy.
+This method improved the performance of adversarial imitation learning from partially observable demonstrations in out of distribution states by using planning with learned cost and value function than using policy based adversarial imitation learning.
