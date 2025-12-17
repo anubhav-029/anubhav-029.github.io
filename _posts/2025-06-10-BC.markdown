@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Behavior cloning of expert for navigation"
-date:   2025-06-02 22:21:59 +00:00
+date:   2025-07-02 22:21:59 +00:00
 image: /images/mppi_cbf.gif
 video: /videos/BC.mp4
 code: "https://github.com/UWRobotLearning/WheeledLab"
