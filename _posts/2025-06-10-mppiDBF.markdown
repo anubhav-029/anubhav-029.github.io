@@ -7,5 +7,6 @@ report: /pdfs/EE548_Report.pdf
 categories: project
 company: National Institute of Science Education and Research
 author: "Anubhav Vishwakarma"
+course: Linear Multivariable Control
 ---
 A project for class multivariable control: Sampling based MPC implementation with Discrete Control Barrier function for obstacle avoidance.
