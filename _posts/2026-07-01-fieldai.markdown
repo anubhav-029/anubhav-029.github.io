@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Robotics AI Engineering & Machine Learning Intern"
+date:   2026-09-26 22:21:59 +00:00
+image: /images/fieldai_logo.svg
+website: "https://www.fieldai.com/"
+company: "FieldAI"
+categories: experience
+---
+<strong>Robotics AI Engineering Intern</strong> <em>(Jul 2026 – Sep 2026)</em>: Worked on synthetic data generation pertaining to improve navigation performance through robust segmentation.<br>
+<strong>Machine Learning Intern</strong> <em>(Jan 2026 – Mar 2026)</em>: Worked on tracking in project involving generation of paths directly in image through generative modelling.

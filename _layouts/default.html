@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E00L9PT3V9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E00L9PT3V9');
+  </script>
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicons for various contexts -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    #themeToggle {
+      padding: 10px;
+      background-color: transparent;
+      color: var(--text-color);
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    #themeToggle:hover {
+      transform: scale(1.2);
+    }
+
+    /* Custom scrollbar styling for news section */
+    .news-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 8px;
+    }
+
+    .news-scroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .news-scroll::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 4px;
+    }
+
+    .news-scroll::-webkit-scrollbar-thumb:hover {
+      background: var(--text-color);
+    }
+
+    .news-scroll::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+
+    details.post-details {
+      margin-top: 6px;
+      font-size: 16px;
+    }
+
+    details.post-details.inline-details {
+      display: inline;
+      margin-top: 0;
+    }
+
+    details.post-details summary {
+      cursor: pointer;
+      color: var(--link-color);
+      user-select: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    details.post-details summary:hover {
+      color: var(--link-hover);
+    }
+
+    details.post-details div,
+    details.post-details p {
+      margin-top: 6px;
+      margin-bottom: 0.5em;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Theme Toggle Button -->
+  <div style="position:fixed; top:10px; right:20px; z-index:1000;">
+    <button id="themeToggle"><i class="fas fa-sun"></i></button>
+  </div>
+
+  <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:0% 2.5% 2.5% 2.5%;width:60%;vertical-align:middle">
+              <h1 style="color: var(--name-color);">
+                Anubhav Vishwakarma
+              </h1>
+              <p style="text-align: justify;">
+                Hello, I am a Robotics graduate student at the University of Washington, where I am fortunate to be advised by <a href="https://faculty.washington.edu/kymleung/">Dr. Karen Leung</a> and work at the <a href="https://robotlearning.cs.washington.edu/">Robot Learning Lab</a> directed by <a href="https://homes.cs.washington.edu/~bboots/">Dr. Byron Boots</a>. My current research interest lies at the intersection of using both classical and learning-based methods to develop trustworthy autonomous systems.
+              </p>
+
+              <p style="text-align: justify;">
+                I hold a Bachelor's degree in Mechanical Engineering from Ramaiah Institute of Technology, Bangalore, India. During my time there, I spent most of my time designing and building efficient aircraft morphologies for various UAV applications. After graduation, I shifted my focus towards building autonomous drones for indoor navigation in GPS-denied environments and SLAM.
+              </p>
+
+              <p style="text-align: justify;">
+                I am on the job market after graduating from the University of Washington in December. Feel free to reach out if you'd like to connect!
+              </p>
+              <p style="text-align:center; white-space: nowrap; font-size: 16px;">
+                <a target="_blank" href="https://mailhide.io/e/aOHiBVGg"><i class="fas fa-envelope"></i> Email</a> &nbsp;|&nbsp;
+                <a href="https://github.com/anubhav-029"><i class="fab fa-github"></i> GitHub</a> &nbsp;|&nbsp;
+                <a href="pdfs/Anubhav_CV.pdf"><i class="fas fa-file"></i> CV</a> &nbsp;|&nbsp;
+                <a href="https://scholar.google.com/citations?user=cNw5svkAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i> Google Scholar</a> &nbsp;|&nbsp;
+                <a href="https://www.linkedin.com/in/anubhav029"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;padding-top:40px;width:40%;max-width:40%">
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.png?v={{ site.time | date: '%s' }}">
+            </td>
+          </tr>
+        </table>
+
+        <!-- Section Divider -->
+        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 0;">
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0%;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>
+                I'm interested in Robotics, Reinforcement Learning, Motion Planning and Controls.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
+              {% if post.image and post.video %}
+              <div class="media-container" style="position: relative; width: 100%; background: transparent;">
+                <img src="/tn{{post.image}}" alt="project image" class="default-media" style="width:100%; height:auto; display:block; transition: opacity 0.3s ease;" />
+                <video class="hover-media" style="position: absolute; top: 0; left: 0; width: 100%; height: auto; object-fit: contain; opacity: 0; transition: opacity 0.3s ease; background: transparent;" muted loop>
+                  <source src="{{post.video}}" type="video/mp4">
+                </video>
+              </div>
+              {% elsif post.image %}
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% elsif post.video %}
+              <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
+                <source src="{{post.video}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% endif %}
+            </td>
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
+              {% if post.title_link %}
+              <a href="{{post.title_link}}" style="text-decoration: none;"><h3><strong>{{post.title}}</strong></h3></a>
+              {% else %}
+              <h3><strong>{{post.title}}</strong></h3>
+              {% endif %}
+              <span style="font-size: 16px;">{{post.authors}}</span>
+              <br>
+              <span style="font-size: 16px;"><em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}</span>
+              {% if post.subtitle %}
+              <br>
+              <span style="font-size: 16px; color: rgb(163, 53, 53);"><strong>{{post.subtitle}}</strong></span>
+              {% endif %}
+              <br>
+              <span style="font-size: 16px;">
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a>
+              {% endif %}
+              {% if post.arxiv %}
+              {% if post.paper %} | {% endif %}<a href="{{post.arxiv}}">arxiv</a>
+              {% endif %}
+              {% if post.video %}
+              {% if post.paper or post.arxiv %} | {% endif %}<a href="{{post.video}}">video</a>
+              {% endif %}
+              {% if post.code %}
+              {% if post.paper or post.arxiv or post.video %} | {% endif %}
+              {% if post.code contains 'http' %}
+              <a href="{{post.code}}">code</a>
+              {% else %}
+              code [{{post.code}}]
+              {% endif %}
+              {% endif %}
+              {% if post.poster %}
+              {% if post.paper or post.arxiv or post.video or post.code %} | {% endif %}<a href="{{post.poster}}">poster</a>
+              {% endif %}
+              {% if post.slides %}
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster %} | {% endif %}<a href="{{post.slides}}">slides</a>
+              {% endif %}
+              {% if post.website %}
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster or post.slides %} | {% endif %}<a href="{{post.website}}">website</a>
+              {% endif %}
+              {% if post.youtube %}
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster or post.slides or post.website %} | {% endif %}<a href="{{post.youtube}}">youtube</a>
+              {% endif %}
+              {% if post.paper or post.arxiv or post.video or post.code or post.poster or post.slides or post.website or post.youtube %} | {% endif %}<details class="post-details inline-details">
+                <summary>details</summary>
+                <div>
+                  {{ post.content }}
+                </div>
+              </details>
+              </span>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <!-- Section Divider -->
+        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 0;">
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0%;width:100%;vertical-align:middle">
+              <h2>Experience</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat != 'research' and cat != 'project' %}
+          <tr>
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
+              {% if post.video %}
+              <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
+                <source src="{{post.video}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% else %}
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
+            </td>
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
+              {% if post.title_link %}
+              <a href="{{post.title_link}}" style="text-decoration: none;"><h3><strong>{{post.title}}</strong></h3></a>
+              {% else %}
+              <h3><strong>{{post.title}}</strong></h3>
+              {% endif %}
+              <span style="font-size: 16px;"><em>{{post.company}} </em></span>
+              <br>
+              <span style="font-size: 16px;">{% if post.date_display %}{{ post.date_display }}{% else %}{{ post.date | date: "%Y-%m-%d" }}{% endif %}</span>
+              <br>
+              <span style="font-size: 16px;">
+              {% if post.website %}
+              <a href="{{post.website}}">website</a>
+              {% endif %}
+              {% if post.paper %}
+              {% if post.website %} | {% endif %}<a href="{{post.paper}}">paper</a>
+              {% endif %}
+              {% if post.patent %}
+              {% if post.website or post.paper %} | {% endif %}<a href="{{post.patent}}">patent</a>
+              {% endif %}
+              {% if post.patent2 %}
+              {% if post.website or post.paper or post.patent %} | {% endif %}<a href="{{post.patent2}}">patent #2</a>
+              {% endif %}
+              {% if post.patent3 %}
+              {% if post.website or post.paper or post.patent or post.patent2 %} | {% endif %}<a href="{{post.patent3}}">patent #3</a>
+              {% endif %}
+              {% if post.video %}
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 %} | {% endif %}<a href="{{post.video}}">video</a>
+              {% endif %}
+              {% if post.video2 %}
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video %} | {% endif %}<a href="{{post.video2}}">video #2</a>
+              {% endif %}
+              {% if post.code %}
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 %} | {% endif %}
+              {% if post.code contains 'http' %}
+              <a href="{{post.code}}">code</a>
+              {% else %}
+              code [{{post.code}}]
+              {% endif %}
+              {% endif %}
+              {% if post.poster %}
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code %} | {% endif %}<a href="{{post.poster}}">poster</a>
+              {% endif %}
+              {% if post.slides %}
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code or post.poster %} | {% endif %}<a href="{{post.slides}}">slides</a>
+              {% endif %}
+              {% if post.website or post.paper or post.patent or post.patent2 or post.patent3 or post.video or post.video2 or post.code or post.poster or post.slides %} | {% endif %}<details class="post-details inline-details">
+                <summary>details</summary>
+                <div>
+                  {{ post.content }}
+                </div>
+              </details>
+              </span>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <!-- Section Divider -->
+        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 0;">
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0%;width:100%;vertical-align:middle">
+              <h2>Projects</h2>
+            </td>
+          </tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat != 'research' and cat != 'experience' %}
+          <tr>
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:35%;vertical-align:top;min-width:150px">
+              {% if post.video %}
+              <video style="width:auto; height:auto; max-width:100%;" controls autoplay muted loop>
+                <source src="{{post.video}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% else %}
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              {% endif %}
+            </td>
+            <td style="padding:2.5% 2.5% 0% 2.5%;width:65%;vertical-align:top">
+              {% if post.title_link %}
+              <a href="{{post.title_link}}" style="text-decoration: none;"><h3><strong>{{post.title}}</strong></h3></a>
+              {% else %}
+              <h3><strong>{{post.title}}</strong></h3>
+              {% endif %}
+              {% if post.course %}
+              <span style="font-size: 16px;"><em>{{post.course}}</em></span>
+              <br>
+              {% endif %}
+              <span style="font-size: 16px;">{{ post.date | date: "%Y-%m-%d" }}</span>
+              <br>
+              <span style="font-size: 16px;">
+              {% if post.website %}
+              <a href="{{post.website}}">website</a>
+              {% endif %}
+              {% if post.paper %}
+              {% if post.website %} | {% endif %}<a href="{{post.paper}}">paper</a>
+              {% endif %}
+              {% if post.video %}
+              {% if post.website or post.paper %} | {% endif %}<a href="{{post.video}}">video</a>
+              {% endif %}
+              {% if post.video2 %}
+              {% if post.website or post.paper or post.video %} | {% endif %}<a href="{{post.video2}}">video #2</a>
+              {% endif %}
+              {% if post.code %}
+              {% if post.website or post.paper or post.video or post.video2 %} | {% endif %}
+              {% if post.code contains 'http' %}
+              <a href="{{post.code}}">code</a>
+              {% else %}
+              code [{{post.code}}]
+              {% endif %}
+              {% endif %}
+              {% if post.poster %}
+              {% if post.website or post.paper or post.video or post.video2 or post.code %} | {% endif %}<a href="{{post.poster}}">poster</a>
+              {% endif %}
+              {% if post.slides %}
+              {% if post.website or post.paper or post.video or post.video2 or post.code or post.poster %} | {% endif %}<a href="{{post.slides}}">slides</a>
+              {% endif %}
+              {% if post.report %}
+              {% if post.website or post.paper or post.video or post.video2 or post.code or post.poster or post.slides %} | {% endif %}<a href="{{post.report}}">report</a>
+              {% endif %}
+              </span>
+              <p style="font-size: 16px;">
+                {{ post.content }}
+              </p>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <!-- Section Divider -->
+        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 0;">
+        <!-- News Section -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>News</h2>
+              <div class="news-scroll" style="max-height: 80px; overflow-y: auto; overflow-x: auto;">
+                <ul style="list-style-type: none; padding-left: 0; margin-top: 10px; margin-right: 10px;">
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Oct 2025]</strong> Started an internship at <a href="https://www.fieldai.com/">FieldAI</a>.
+                  </li>
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Oct 2025]</strong> Gave a presentation on <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/6a5c38a730b17f3827c09cf6b192be04-Paper-Conference.pdf"></a>model based diffusion for trajectory optimization</a> <a href="pdfs/model_based_diffusion.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--link-color); text-decoration: none;">presentation (PDF)</a> at CTRL <a href="https://depts.washington.edu/ctrl/index.html"> reading group </a>.
+                  </li>
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Sep 2025]</strong> Our paper MPAIL won the <span style="color: rgb(163, 53, 53);">Best Runner-Up</span> award at CoRL <a href="https://rational-robots.github.io/#:~:text=Model%20Predictive%20Adversarial%20Imitation%20Learning%20for%20Planning%20from%20Observation" target="_blank" rel="noopener noreferrer" style="color: var(--link-color); text-decoration: none;">Resource-Rational Robot Learning Workshop</a><span style="color: var(--text-color);">!</span>
+                  </li>
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Oct 2024]</strong> Gave a presentation on Socially compliant navigation through inverse reinforcement learning <a href="pdfs/socially_compliant_navigation_presentation.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--link-color); text-decoration: none;">presentation (PDF)</a>.
+                  </li>
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Sep 2024]</strong> Started my MS at the University of Washington.
+                  </li>
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Jun 2022]</strong> Graduated with B.E in Mechanical Engineering from Ramaiah Institute of Technology.
+                  </li>
+                  <li style="margin-bottom: 8px; white-space: nowrap;">
+                    <strong>[Apr 2022]</strong> <span style="color: rgb(163, 53, 53);">2nd Rank</span> in Design at <a href="https://www.saeaerodesign.com/page.aspx?pageid=c93ea933-b70e-4523-8cbc-276cc89a4211#:~:text=Advanced%20Class-,Regular%20Class,-2021%20SAE%20Aero">SAE International Aero Design West Competition 2022</a>.
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <div style="display:flex; justify-content:space-between; align-items:center; font-size:small; color:#999;">
+                <span>Last updated: {{ site.time | date: "%B %d, %Y" }}</span>
+                <span>Website template adapted from <a style="font-size:small; color:#999;" href="https://github.com/leonidk">Leonid Keselman</a></span>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Visitor Map Widget -->
+  <!--
+  <div style="text-align:center; padding:2px; margin-top:2px; max-width:180px; margin-left:auto; margin-right:auto;">
+    <h3 style="margin:1px 0; font-size:10px;">Visitors</h3>
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=fd2wl8VE9RpsUriJP7dUUYx_DXcxK88t2rsNIIYox5E&cl=ffffff&w=a"></script>
+  </div>
+  -->
+
+  <!-- Theme Toggle Script -->
+  <script>
+    // Initialize theme from localStorage
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      applyTheme(savedTheme);
+    }
+
+    // Apply theme to the page
+    function applyTheme(theme) {
+      const button = document.getElementById('themeToggle');
+      if (theme === 'dark') {
+        document.body.classList.add('dark-theme');
+        button.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        document.body.classList.remove('dark-theme');
+        button.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    // Toggle theme on button click
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      const currentTheme = localStorage.getItem('theme') || 'light';
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      applyTheme(newTheme);
+    });
+
+    // Initialize theme on page load
+    window.addEventListener('load', initTheme);
+
+    // Handle hover transition from image to video in research section
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.media-container').forEach(function(container) {
+        const img = container.querySelector('.default-media');
+        const video = container.querySelector('.hover-media');
+        
+        if (!img || !video) return;
+        
+        container.addEventListener('mouseenter', function() {
+          img.style.opacity = '0';
+          video.style.opacity = '1';
+          video.play();
+        });
+        
+        container.addEventListener('mouseleave', function() {
+          img.style.opacity = '1';
+          video.style.opacity = '0';
+          video.pause();
+          video.currentTime = 0;
+        });
+      });
+    });
+    window.addEventListener('load', initTheme);
+    // Also run immediately in case page is already loaded
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initTheme);
+    } else {
+      initTheme();
+    }
+  </script>
+</body>
+
+</html>
+

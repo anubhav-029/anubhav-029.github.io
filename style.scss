@@ -1,0 +1,123 @@
+---
+---
+
+//
+// THEME VARIABLES
+//
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1772d0;
+  --link-hover: #f09228;
+  --border-color: #e0e0e0;
+  --table-bg: #ffffff;
+  --name-color: #181848;
+}
+
+body.dark-theme {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --link-color: #64b5f6;
+  --link-hover: #ffb74d;
+  --border-color: #333333;
+  --table-bg: #252525;
+  --name-color: #ffb74d;
+}
+
+//
+// BASE RULES
+//
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 1.5s ease;
+  // font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-size: 16px;
+  font-display: auto;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+table {
+  background-color: transparent !important;
+  border-color: transparent;
+  width: 100%; /* Common table setting */
+}
+
+td,
+th,
+tr {
+  background-color: transparent !important;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+strong,
+td,
+th,
+tr,
+p {
+  // font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-size: 16px;
+  font-display: auto;
+}
+
+h1 {
+  // font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-display: auto;
+  text-align: center;
+  padding: 0px;
+  margin-block-start: 14px;
+  margin-block-end: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+h2 {
+  // font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-size: 24px;
+  font-display: auto;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  /* Removed display: inline; */
+}
+
+h3 {
+  // font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-family: "Latin Modern Roman", "Computer Modern", serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-display: auto;
+  padding: 0px;
+  margin: 0px;
+  /* Removed display: inline; */
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+//@import "highlights";
+//@import "svg-icons";

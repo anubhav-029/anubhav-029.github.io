@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Graduate Student Researcher"
+date:   2026-11-01 22:21:59 +00:00
+date_display: "2025-03 – Present"
+image: /images/uw_logo.png
+website: "https://robotlearning.cs.washington.edu/"
+company: "University of Washington"
+categories: experience
+---
+Explored IRL, formal safety methods, and model-based control.
